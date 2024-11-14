@@ -26,9 +26,6 @@ pipeline {
     }
 
   }
-  environment {
-    DOCKERHUB_CREDENTIALS = credentials('valaxy-dockerhub')
-  }
   post {
     always {
       sh 'docker logout'
